@@ -1,4 +1,120 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 65px;
+    background-color: white;
+    color: black;
+    border-bottom: black solid 4px;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    float: right;
+    
+   
+}
+
+li {
+    display: flex;
+    padding: 15px 10px;
+    align-items: center;
+    
+}
+
+a, a:visited {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    color: rgb(195, 7, 70); 
+}
+
+
+
+
+/* .main-layout {
+    margin: 5%;
+} */
+
+section {
+    min-height: 100vh;
+    border-bottom: black solid 1px;
+    margin:  10%;
+    padding: 40px 0;
+}
+
+.footer-section {
+    height: 40px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h1.hero-h1 {
+    font-family: 'Special Elite';
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* // projects */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project-card {
+    width: 300px;
+    height: 400px;
+    border: black solid 1px;
+    box-shadow: 4px 7px 3px 3px grey;
+    margin: 25px 15px;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.left {
+    background-color: green;
+    left: 0;
+}
+
+.right {
+    background-color: yellowgreen;
+    right: 0;
+}
+
+.logo {
+    color: white;
 }
