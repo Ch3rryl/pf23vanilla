@@ -36,7 +36,7 @@ a, a:visited {
 }
 
 a:hover {
-    color: rgb(195, 7, 70); 
+    color: #f6318c; 
 }
 
 
@@ -126,9 +126,6 @@ text-align: center;
     background-color: aquamarine;
 }
 
-
-
-
 .icon {
     display: inline-block;
     width: 100px;
@@ -142,13 +139,78 @@ text-align: center;
     grid-template-columns: 100px 100px 100px;
 }
 
+/* contact form  */
+
+.form-center {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+
+  .form__input {
+    display: block;
+    margin: 20px;
+    width: clamp(120px, 50vw, 420px);
+    height: 2.5rem;
+    padding: 0 1.25rem;
+    border: none;
+    border-radius: 2px;
+    
+    outline: none;
+   
+    background-color: #96969633;
+    color: rgb(160, 155, 155);
+
+    @media (min-width: 800px) {
+      width: clamp(120px, 35vw, 420px);
+
+      &:hover {
+        border-bottom:  #ff059d;
+        outline: none;
+    }
+    } 
+
+    .form__input textarea {
+    height: 400px !important;
+}
+
+
 
 
 
 /* media queries / responsive changes */
 
 @media (max-width: 800px) {
-    .flex-rightright, .flex-left {
+    .flex-right, .flex-left {
       flex: 100%;
     } 
+}}
+
+
+button {
+    display: block;
+    width: 250px;
+    font-size: 16px;
+    margin: auto;
+    background-color: #ff059d;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.fa-github-square {
+    display: block;
+    width: 155px;
+    height: 155px;
+}
+
+.fa-lg {
+   float: right;
+   padding: 10px; 
+
 }

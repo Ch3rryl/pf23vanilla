@@ -17,10 +17,10 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="nav">
         <ul>
             
-            <li><a href="#hero-section">HOME</a></li>
+            <li><a href="#nav">HOME</a></li>
             <li><a href="#about-section">ABOUT</a></a></li>
             <li><a href="#project-section">PROJECTS</a></li>
             <li><a href="#contact-section">CONTACT</a></li>
@@ -31,11 +31,11 @@
 
     <main class="main-layout">
     
-    <section class="hero-section" id="hero-section">
+    <section class="hero-section" id="hero-section"><br><br>
 
         <h1 class="hero-h1">HEY! Hello.</h1>
 
-        <h1>I'M CHERRYL SINCLAIR. FRONTEND DEVELOPER</h1>
+        <h1>I'M CHERRYL SINCLAIR.<br>FRONTEND DEVELOPER</h1>
        <h3>JAVASCRIPT, REACT, SQL</h3>
        <h3>i code dynamic, responsive websites & apps</h3>
         
@@ -104,7 +104,24 @@
 
 
     <section class="contact-section" id="contact-section">
-        <h1>CONTACT</h1>
+        <h1>CONTACT<i class="fa-brands fa-square-x-twitter fa-lg"></i><i class="fa-brands fa-square-github fa-lg"></i></h1>
+
+
+        <div class="form-center">
+
+        <form class="form">
+            <input type="text" placeholder="Name" class="form__input" id="name" required/>
+      
+            <input type="email" placeholder="Email" class="form__input" id="email" required/>
+      
+            <textarea type="text" rows="4" placeholder="Message" class="form__input" id="message" required></textarea>
+            <!-- <input type="text" placeholder="Message" class="form__input" id="message" required/><br> -->
+          </form>
+          
+        
+        </div>
+        <button class="submit">Submit</button>
+
     </section>
 
 </main>
